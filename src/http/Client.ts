@@ -1,17 +1,8 @@
-import * as rax from 'retry-axios'
 import axios from 'axios'
 import { Http } from 'app-types'
 
 class HttpClient {
   public axios = axios.create()
-  public instanceId: number
-
-  constructor() {
-    this.axios.defaults.raxConfig = {
-      instance: this.axios
-    }
-    this.instanceId = rax.attach(this.axios)
-  }
 
   public async request<T>(options: Http.RequestOptions) {
     try {
