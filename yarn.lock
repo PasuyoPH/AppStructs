@@ -7,11 +7,9 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.4.2.tgz#129cc9ae69f93824f92fac653eebfb4812ab4af9"
   integrity sha512-Dd0BYtWgnWJKwO1jkmTrzofjK2QXXcai0dmtzvIBhcA+RsG5h8R3xlyta0kGOZRNfL9GuRtb1knmPEhQrePCEw==
 
-app-types@PasuyoPH/AppTypes:
+app-types@pASUYOPH/APPTYPES:
   version "0.1.0"
-  resolved "https://codeload.github.com/PasuyoPH/AppTypes/tar.gz/070b5bd35751d90bf31e97abf16b23a21be88325"
-  dependencies:
-    axios "^1.4.0"
+  resolved "https://codeload.github.com/pASUYOPH/APPTYPES/tar.gz/a82b1480306e031232b8a6cd31edd46064d94edb"
 
 asynckit@^0.4.0:
   version "0.4.0"

@@ -1,15 +1,18 @@
 {
   "name": "app-structs",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.4.2",
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "app-types": "PasuyoPH/AppTypes",
+    "app-types": "pASUYOPH/APPTYPES",
     "axios": "^1.4.0",
     "retry-axios": "^3.0.0"
+  },
+  "scripts": {
+    "install": "tsc --project tsconfig.json"
   }
 }
