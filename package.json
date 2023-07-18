@@ -1,6 +1,6 @@
 {
   "name": "app-structs",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
@@ -8,7 +8,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "app-types": "pASUYOPH/APPTYPES",
+    "app-types": "PasuyoPH/AppTypes",
     "axios": "^1.4.0",
     "retry-axios": "^3.0.0"
   },
