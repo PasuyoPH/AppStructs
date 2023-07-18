@@ -1,6 +1,6 @@
 {
   "name": "app-structs",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
@@ -12,6 +12,7 @@
     "axios": "^1.4.0"
   },
   "scripts": {
-    "install": "tsc --project tsconfig.json"
+    "compile": "tsc --project tsconfig.json",
+    "prepare": "npm run compile"
   }
 }

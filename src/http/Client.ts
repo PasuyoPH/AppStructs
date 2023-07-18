@@ -23,14 +23,15 @@ class HttpClient {
       }
     } catch(err) {
       const errData = await this.getErrorData(err),
-        result: Http.Result<null> = { code: 400 }
+        code = errData ? (errData.code ?? err.response.status) : 400,
+        result: Http.Result<null> = {
+          code,
+          error: true
+        }
     
       if (errData)
-        result.message = `E${errData.code}: ${errData.message}`
+        result.message = `E${code}: ${errData.message ?? 'No error message provided.'}`
       
-      result.error =  true
-      result.code = errData ? errData.code : 400
-
       return result
     }
   }
