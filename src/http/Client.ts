@@ -2,11 +2,9 @@ import axios from 'axios'
 import { Http } from 'app-types'
 
 class HttpClient {
-  public axios = axios.create()
-
   public async request<T>(options: Http.RequestOptions) {
     try {
-      const result = await this.axios(
+      const result = await axios(
           {
             method: options.method ?? 'get',
             url: options.url,
