@@ -13,6 +13,6 @@
   },
   "scripts": {
     "compile": "tsc --project tsconfig.json",
-    "prepare": "npm run compile"
+    "postinstall": "npm run compile"
   }
 }
