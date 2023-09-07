@@ -1,6 +1,6 @@
 {
   "name": "app-structs",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
@@ -13,6 +13,6 @@
   },
   "scripts": {
     "compile": "tsc --project tsconfig.json",
-    "postinstall": "npm run compile"
+    "prepack": "npm run compile"
   }
 }
