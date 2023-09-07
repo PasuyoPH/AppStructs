@@ -13,6 +13,6 @@
   },
   "scripts": {
     "compile": "tsc --project tsconfig.json",
-    "prepack": "npm run compile"
+    "install": "npm run compile"
   }
 }
