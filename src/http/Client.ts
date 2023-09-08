@@ -18,7 +18,7 @@ class HttpClient {
         value: data.value as T,
         error: false,
         code: 200
-      }
+      } as Http.Result<T>
     } catch(err) {
       const errData = await this.getErrorData(err),
         code = errData ? (errData.code ?? err.response.status) : 400,
