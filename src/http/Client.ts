@@ -21,7 +21,7 @@ class HttpClient {
       } as Http.Result<T>
     } catch(err) {
       const errData = await this.getErrorData(err),
-        code = errData ? (errData.code ?? err.response.status) : 400,
+        code = errData ? (errData.code ?? (err as any).response.status) : 400,
         result: Http.Result<null> = {
           code,
           error: true
